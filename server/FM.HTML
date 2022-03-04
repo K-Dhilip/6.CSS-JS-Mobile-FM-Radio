@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADIO MAP</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+    <div class="mobile">
+        <!-- <span id="bo" class="material-icons">
+            circle
+            </span>   -->
+              <div class="screen"> 
+
+
+
+            <img class="img" src="../images/ListeRadios.JPG" usemap="#1">
+
+            <audio hidden id="lecteur" controls></audio> <br>
+            <p id="affichage">Please choose your FM Station</p>
+            <map name="1">
+                <area shape="rect" coords="0,0,118,116"    onclick="selectStation(this)"  title="RTL" alt="" >
+                <area shape="rect" coords="121,0,238,116"  onclick="selectStation(this)"  title="EUROPE 1" alt="">
+                <area shape="rect" coords="241,0,358,116"  onclick="selectStation(this)"  title="RMC" alt="">
+                <area shape="rect" coords="0,119,238,236"  onclick="selectStation(this)"  title="FRANCE INFO" alt="">
+                <area shape="rect" coords="120,119,238,236"  onclick="selectStation(this)"  title="FRANCE INTER" alt="">
+                <area shape="rect" coords="141,119,358,236"  onclick="selectStation(this)"  title="SUD RADIO" alt="">
+                <area shape="rect" coords="0,239,118,357"  onclick="selectStation(this)"  title="RADIO NOVA" alt="">
+                <area shape="rect" coords="120,239,239,357"  onclick="selectStation(this)"  title="OUI FM" alt="">
+                <area shape="rect" coords="241,239,357,357"  onclick="selectStation(this)"  title="FIP" alt="">
+                <area shape="rect" coords="0,360,119,477"  onclick="selectStation(this)"  title="NOSTALGIE" alt="">
+                <area shape="rect" coords="120,360,238,477"  onclick="selectStation(this)"  title="RTL2" alt="">
+                <area shape="rect" coords="241,349,359,477"  onclick="selectStation(this)"  title="CHERIE FM" alt="">
+                <area shape="rect" coords="0,480,117,592"  onclick="selectStation(this)"  title="RIRE et CHANSONS" alt="">
+                <area shape="rect" coords="120,480,360,593"  onclick= alert("NO-FM-STATION-SELECTED"); alt="">
+
+            </map>
+       
+        </div>
+        <a href="../server/Hscreen.HTML"><button  id="bo"></button></a>
+    </div>
+    </div>
+    
+</div>
+
+<script src="radios.js"></script>
+</body>
+</html>
